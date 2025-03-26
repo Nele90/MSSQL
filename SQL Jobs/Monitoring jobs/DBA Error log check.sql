@@ -23,7 +23,7 @@ EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'DBA: Error log check',
 		@delete_level=0, 
 		@description=N'No description available.', 
 		@category_name=N'[Database Maintenance]', 
-		@owner_login_name=N'SMA\radevic_admin', 
+		@owner_login_name=N'owner name', 
 		@notify_email_operator_name=N'DBA_member', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Check error log]    Script Date: 15.11.2023 09:13:54 ******/
