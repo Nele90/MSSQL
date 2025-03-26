@@ -39,7 +39,7 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Database
 		@os_run_priority=0, @subsystem=N'TSQL', 
 		@command=N'EXECUTE [dbo].[DatabaseBackup]
 @Databases = ''USER_DATABASES'',
-@URL = ''https://azwewprdplmsa.blob.core.windows.net/plm-prd-sqlbackup'',
+@URL = ''blob storage name'',
 @BackupType = ''LOG'',
 @CheckSum = ''Y'',
 @Compress = ''Y'',
