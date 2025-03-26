@@ -96,7 +96,7 @@ AS
 SELECT DatabaseName, DBsizeGB
 INTO #FileSize
 FROM DBsize
-WHERE DatabaseName = ''tcprd14''
+WHERE DatabaseName = ''dbanme''
 
 
 
