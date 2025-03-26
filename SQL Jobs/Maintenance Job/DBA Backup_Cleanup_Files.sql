@@ -23,7 +23,7 @@ EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'DBA: Backup_Cleanup_Files',
 		@delete_level=0, 
 		@description=N'No description available.', 
 		@category_name=N'[Database Maintenance]', 
-		@owner_login_name=N'sma\radevic_admin', @job_id = @jobId OUTPUT
+		@owner_login_name=N'ownername', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Check_node]    Script Date: 2/2/2024 11:33:58 AM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Check_node', 
